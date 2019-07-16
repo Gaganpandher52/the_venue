@@ -11,7 +11,7 @@ const SideDrawer = (props) => {
       onClose={()=> props.onClose(false)}
     
     >
-    drawer
+    
 
     </Drawer>
     
