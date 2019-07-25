@@ -1,11 +1,12 @@
 import React from 'react';
 import Description from './Descriptions'
-
+import Discount from './Discount'
 
 const Highlights = () => {
   return (
-    <div className='highlights_wrapper'>
+    <div className='highlight_wrapper'>
       <Description/>
+      <Discount/>
       
     </div>
   );

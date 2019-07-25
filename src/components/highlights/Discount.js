@@ -3,9 +3,43 @@ import Fade from 'react-reveal/Fade'
 import Slide from 'react-reveal/Slide'
 
 class Discount extends Component {
+  state = {
+    discountStart: 0,
+    discountEnd:30
+  }
+
+  porcentage = () => {
+    if(this.state.discountStart < this.state.discountEnd){
+      this.setState({
+        discountStart: this.state.discountStart + 1
+      })
+
+    }
+  } 
+
   render() {
     return (
-      <div>
+      <div className='center_wrapper'>
+        <div className='discount_wrapper'>
+          <Fade
+            onReveal={()=> this.porcentage()}
+          >
+            <div className='discount_porcentage'>
+              <span>{this.state.discountStart}%</span>
+              <span>OFF</span>
+            </div>
+          </Fade>
+          <Slide right>
+            <div className='discount_description'>
+              <h3>Purchase tickets before August 5th</h3>
+              <p>Tickets can be bought from multiple locations</p>
+              <div>
+                button
+              </div>
+            </div>
+          </Slide>
+        
+        </div>
         
       </div>
     );
