@@ -13,9 +13,15 @@ class Discount extends Component {
       this.setState({
         discountStart: this.state.discountStart + 1
       })
-
     }
   } 
+
+  componentDidUpdate(){
+    setTimeout(()=>{
+      this.porcentage()
+    },30)
+
+  }
 
   render() {
     return (
