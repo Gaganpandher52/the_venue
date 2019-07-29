@@ -4,6 +4,7 @@ import Header  from './components/header_footer/header.js'
 import Featured from './components/featured/index';
 import VenueInfo from './components/venueInfo';
 import Highlights from './components/highlights'
+import Pricing from './components/pricing'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Featured/>
       <VenueInfo/>
       <Highlights/>
+      <Pricing/>
       
     </div>
   );
