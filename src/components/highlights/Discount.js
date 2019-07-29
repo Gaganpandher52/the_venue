@@ -40,7 +40,12 @@ class Discount extends Component {
             <div className='discount_description'>
               <h3>Purchase tickets before August 5th</h3>
               <p>Tickets can be bought from multiple locations</p>
-              <MyButton/>
+              <MyButton
+                text="Purchase Tickets"
+                bck='#ffa800'
+                color='#ffffff'
+                link='http://google.com'
+              />
             </div>
           </Slide>
         
