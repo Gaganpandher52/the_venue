@@ -13,13 +13,24 @@ function App() {
   return (
     <div className="App" style={{height:'1500px'}}>
       <Header/>
-      <Featured/>
-      <VenueInfo/>
+      <Element name='featured'>
+        <Featured/>
+      </Element>
+
+      <Element name='venueInfo'>
+        <VenueInfo/>
+      </Element>
+
       <Element name='highlights'>
         <Highlights/>
       </Element>
-      <Pricing/>
-      <Location/>
+
+      <Element name='pricing'>
+        <Pricing/>
+      </Element>
+      <Element name='location'>
+        <Location/>
+      </Element>
       <Footer/>
       
     </div>
