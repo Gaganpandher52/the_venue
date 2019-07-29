@@ -6,6 +6,7 @@ import VenueInfo from './components/venueInfo';
 import Highlights from './components/highlights'
 import Pricing from './components/pricing'
 import Location from './components/location'
+import Footer  from './components/header_footer/footer.js'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Highlights/>
       <Pricing/>
       <Location/>
+      <Footer/>
       
     </div>
   );

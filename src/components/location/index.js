@@ -8,7 +8,7 @@ const Location = () => {
       height="500px" 
       frameBorder="0" 
       allowFullScreen></iframe>
-      <div className='locaiton_tag'>
+      <div className='location_tag'>
         <div>Location</div>
 
       </div>
