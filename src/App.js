@@ -7,7 +7,7 @@ import Highlights from './components/highlights'
 import Pricing from './components/pricing'
 import Location from './components/location'
 import Footer  from './components/header_footer/footer.js'
-
+import {Element} from  'react-scroll';
 
 function App() {
   return (
@@ -15,7 +15,9 @@ function App() {
       <Header/>
       <Featured/>
       <VenueInfo/>
-      <Highlights/>
+      <Element name='highlights'>
+        <Highlights/>
+      </Element>
       <Pricing/>
       <Location/>
       <Footer/>

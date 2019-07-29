@@ -12,7 +12,7 @@ const Location = () => {
         <div>Location</div>
 
       </div>
-      
+       
     </div>
   );
 };
